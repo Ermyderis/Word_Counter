@@ -49,10 +49,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 {
                     textView.setText("Word: " + Counter.wordCounter(writedtext));
                 }
-
-
+                else if (spinnertext.equals("symbols"))
+                {
+                    textView.setText("Symbols: " + Counter.symbolsCounter(writedtext));
 
                 }
+
+
+
+
+            }
 
         });
 
