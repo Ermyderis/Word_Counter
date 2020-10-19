@@ -5,4 +5,12 @@
     <string name="simbolview">TextView</string>
     <string name="youText">Name</string>
     <string name="yourtext">Name</string>
+    <string name="selectItem">TextView</string>
+    <string name="button">Button</string>
+    <string name="your_text">Your text</string>
+
+    <string-array name ="selection">
+        <item>words</item>item>
+        <item>symbols</item>item>
+    </string-array>string-array>
 </resources>
