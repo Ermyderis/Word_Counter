@@ -13,7 +13,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:text="Result"
+        android:text="@string/result"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/yourtext"
@@ -32,6 +32,7 @@
         app:layout_constraintVertical_bias="0.12" />
 
     <EditText
+        tools:ignore="LabelFor"
         android:id="@+id/yourtext"
         android:layout_width="344dp"
         android:layout_height="511dp"

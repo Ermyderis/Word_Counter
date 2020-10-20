@@ -8,6 +8,9 @@
     <string name="selectItem">TextView</string>
     <string name="button">Button</string>
     <string name="your_text">Your text</string>
+    <string name="result">Result</string>
+    <string name="word">\"Word: \"</string>
+    <string name="symbols">\"Symbols: \"</string>
 
     <string-array name ="selection">
         <item>words</item>item>

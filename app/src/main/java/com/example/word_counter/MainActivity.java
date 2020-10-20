@@ -30,15 +30,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
-        buttonSearch = (Button) findViewById(R.id.button);
-        editText = (EditText) findViewById(R.id.yourtext);
-        textView = (TextView) findViewById(R.id.textView);
+        buttonSearch = findViewById(R.id.button);
+        editText = findViewById(R.id.yourtext);
+        textView = findViewById(R.id.textView);
         buttonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String spinnertext =  spinner.getSelectedItem().toString();
                 String firstchose = "words";
-                String writedtext = editText.getText().toString();
+
 
                 if (TextUtils.isEmpty(editText.getText().toString()))
                 {
@@ -47,11 +47,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                 else if (spinnertext.equals("words"))
                 {
-                    textView.setText("Word: " + Counter.wordCounter(writedtext));
+                    String writedtext = editText.getText().toString();
+                    textView.setText((getString(R.string.word) + Counter.wordCounter(writedtext)));
                 }
                 else if (spinnertext.equals("symbols"))
                 {
-                    textView.setText("Symbols: " + Counter.symbolsCounter(writedtext));
+                    String writedtext = editText.getText().toString();
+                    textView.setText((getString(R.string.symbols) + Counter.symbolsCounter(writedtext)));
 
                 }
 
